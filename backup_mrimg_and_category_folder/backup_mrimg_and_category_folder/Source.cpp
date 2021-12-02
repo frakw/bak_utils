@@ -118,6 +118,7 @@ const std::pair<std::string, std::string> get_bak_year_month() {//每個月的�
 	int mday = tstruct.tm_mday;//day of the month 1~31
 	int wday = tstruct.tm_wday;//days since Sunday  星期日 => 0,星期一 => 1,星期二 => 2 ...
 
+	/*
 	if (wday == 0) {//星期日算成7
 		wday = 7;
 	}
@@ -130,6 +131,7 @@ const std::pair<std::string, std::string> get_bak_year_month() {//每個月的�
 			month--;
 		}
 	}
+	*/
 	return make_pair(to_string(year), to_string(month));
 }
 
